@@ -30,4 +30,14 @@ WELCOME TO MY WEB DEV PROJECT!
 
 Sit back! RELAX and get ready to be slightly excited!
 
+TO WORK THIS WEBSITE! YOU'LL NEED MAMP, NodeJS, NPM, and a terminal.
+
+Download pokemonweb (from this github)
+Start MAMP and visit http://localhost/phpMyAdmin/ in a browser. 
+In phpMyAdmin, create the database “Pokemon” and drag and drop in the database file pokemonweb/pokemon.sql
+Open index.js in your terminal
+Visit the website at http://localhost:3000.
+ENJOY!
+
+
 
