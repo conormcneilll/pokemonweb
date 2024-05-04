@@ -1,0 +1,27 @@
+<%- include('../views/header.ejs',{page: 'home'}) %>
+<div class="nice hero">
+  <h1><%= title %></h1>
+  <h1>Got Pokemon cards?</h1>
+  <h3>Organise your Pokemon collection, discover new cards and connect with the community!</h3>
+
+  
+</div>
+<div class="nice">  
+  <div class="flex-container"> 
+
+    <% if(typeof pokemonCards != "undefined") { %>
+    <% pokemonCards.forEach(card => { %>
+      <div class="pokemon-card">
+        <img src="<%= card.imageUrl %>" alt="<%= card.name %>">
+        <h2><%= card.name %></h2>
+        <p><%= card.description %></p>
+      </div>
+    <% }); %>
+    <% } %>
+
+
+  </div>
+
+
+</div>
+<%- include('footer.ejs') %>

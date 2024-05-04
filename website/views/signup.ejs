@@ -1,0 +1,20 @@
+<%- include('../views/header.ejs',{page: 'signup'}) %>
+
+<div class="nice">
+  <h2>Sing Up! Join the community!</h2>
+</div>
+
+<div class="nice">
+  <form method="post" action="/createuser">
+    <label>
+      <input name="username" type="text" id="username" placeholder="username">
+      <input name="password" type="password" id="password" placeholder="password">
+      <input name="firstname" type="text" id="firstname" placeholder="firstname">
+      <input name="secondname" type="text" id="secondname" placeholder="secondname">
+      <input name="email" type="text" id="email" placeholder="email">
+    </label>
+    <button class="btn btn-outline-light">Sign Up</button>
+  </form>
+</div>
+
+<%- include('footer') %>

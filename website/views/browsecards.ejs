@@ -1,0 +1,42 @@
+<%- include('../views/header.ejs',{page: 'browsecards'}) %>
+
+<div class="nice">
+  <h1>Pokedex</h1>
+
+  <h4>Browse our cards or filter below</h4>
+
+</div>
+   
+    <form method="GET" action="/search" class="d-flex" role="search">
+        <input 
+        type="search" 
+        name="q" 
+        placeholder="Filter Cards"
+        value="<% if(query) { %><%= query.q %><% } %>">
+        <button type="submit" value="search" class="btn btn-sm btn-outline-light"><i class="bi bi-search"></i></button>
+      </form>
+
+</div>
+
+<div class="nice">
+    
+    <div class="flex-container"> 
+  
+      <% if(typeof results != "undefined") { %>
+      <% results.forEach(card => { %>
+        <div class="pokemon-card">
+          <img src="<%= card.ImageURL %>" alt="<%= card.Name %>">
+          <h2><%= card.Name %></h2>
+          <p><%= card.Description %></p>
+          <!-- <p><%= card.ImageURL %></p> -->
+        </div>
+      <% }); %>
+      <% } %>
+  
+  
+    </div>
+  </div>
+
+
+
+<%- include('footer') %>
