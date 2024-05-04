@@ -32,7 +32,7 @@ Sit back! RELAX and get ready to be slightly excited!
 
 TO WORK THIS WEBSITE! YOU'LL NEED MAMP, NodeJS, NPM, and a terminal.
 
-Download pokemonweb (from this github)
+Download pokemonweb (from this github) https://github.com/conormcneilll/pokemonweb
 Start MAMP and visit http://localhost/phpMyAdmin/ in a browser. 
 In phpMyAdmin, create the database “Pokemon” and drag and drop in the database file pokemonweb/pokemon.sql
 Open index.js in your terminal
